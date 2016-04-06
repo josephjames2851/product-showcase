@@ -2,6 +2,7 @@
 <html>
   <head>
     <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/skeleton.css"/>
     <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
     <title>Smooth Sailing Coffee</title>
 
@@ -20,7 +21,7 @@
         <li class="topBar-item">Learn</li>
         <li class="topBar-item">Recipes</li>
       </ul>
-      <img src="images/logo_smoothsailing.png" width=150px height=150px class="tobBar-logo" />
+      <img src="images/logo_smoothsailing.png" class="topBar-logo" />
       <ul class="topBar-rightNav">
         <li class="topBar-item">Sign In</li>
         <li class="topBar-item ghostBtn">Sign Up</li>
@@ -31,101 +32,114 @@
 
 <!--HERO-->
 
-  <section class="hero">
+  <section class="hero page-section">
+    <div class="container">
       <h1>Ready Made<br> Coffee</h1>
       <p>Fresh, cold-brewed coffee automatically delivered to your doorstep for less than $10 a week.</p>
-      <a href="signup.html" class="btn">Try It!</a>
-      <!-- <img src="images/twobottles.png" width=400px height=400px alt="Two Bottles of Coffee" class=heroImage/>  -->
+      <a href="signup.html" class="button button-primary btn-blue">Try It!</a>
+      <img src="images/twobottles.png" alt="Two Bottles of Coffee" class="heroImage" /> 
+    </div>
   </section>  
 
 <!--HOW IT WORKS-->
 
-  <section class="how-it-works">
-    <div class="hiw-heading">
-      <h2>How it Works</h2>
-      <p>Select the delivery subscription best for you based on the average number of cups you drink per day.</p>
-    </div>
-    
-    <div class="plan-options">
-      <div class="one-cup-plan">
-        <img src="images/cup.png" width=23px height=30px />
-        <h6>One Cup Plan</h6>
-        <ul>
-          <li>Servings: 1 cup / day</li>
-          <li>Delivery: 1 container / week</li>
-          <li>Cost: $35 / month</li>
-        </ul>
-        <a href="signup.html" class="btn">Get Started</a>
-      </div>
-      <div class="two-cup-plan">
-        <img src="images/cup.png" width=23px height=30px />
-        <img src="images/cup.png" width=23px height=30px />
-        <h6>Two Cup Plan</h6>
-        <ul>
-          <li>Servings: 2 cups / day</li>
-          <li>Delivery: 2 containers / week</li>
-          <li>Cost: $60 / month</li>
-        </ul>
-        <a href="signup.html" class="btn">Get Started</a>
+  <section class="how-it-works page-section">
+    <div class="container">
+      <div class="row">
+        <div class="one-third column text-center">
+          <h2 class="text-white">How it Works</h2>
+          <p class="text-white">Select the delivery subscription best for you based on the average number of cups you drink per day.</p>
+        </div>
+        <div class="one-third column">
+          <div class="plan-item">
+            <img src="images/cup.png" width=23px height=30px />
+            <h3>One Cup Plan</h3>
+            <ul>
+              <li>Servings: 1 cup / day</li>
+              <li>Delivery: 1 container / week</li>
+              <li>Cost: $35 / month</li>
+            </ul>
+            <a href="signup.html" class="btn btn-red">Get Started</a>
+          </div>
+        </div>
+        <div class="one-third column">
+          <div class="plan-item">
+            <img src="images/cup.png" width=23px height=30px />
+            <img src="images/cup.png" width=23px height=30px />
+            <h3>Two Cup Plan</h3>
+            <ul>
+              <li>Servings: 2 cups / day</li>
+              <li>Delivery: 2 containers / week</li>
+              <li>Cost: $60 / month</li>
+            </ul>
+            <a href="signup.html" class="btn btn-green">Get Started</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
 <!--THE BENEFITS-->
 
-  <section class="benefits">
-    <div class="benefits-image">
-      <img src="images/twoglasses.jpg"/>
-    </div>
+  <section class="benefits page-section">
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <img src="images/twoglasses.jpg" alt="Two Glasses of Ice Coffee" class="benefits-image" />
+        </div>
 
-    <div class="benefits-text">
-      <h2>The Benefits</h2>
-      <div class="benefits-card">
-        <h3>Ready to Enjoy</h3>
-        <p>Fast and simple. No mess to clean up and no extra prep or special tools needed like coffee machines, filters or pods.</p>
-        <a href="learn.html">Learn More</a>
+        <div class="one-half column">
+          <h2 class="text-center">The Benefits</h2>
+          <div class="benefits-card">
+            <h4>Ready to Enjoy</h4>
+            <p>Fast and simple. No mess to clean up and no extra prep or special tools needed like coffee machines, filters or pods.</p>
+            <a href="learn.html" class="link">Learn More</a>
+          </div>
+          <!--Position Dots???-->
+        </div>
       </div>
-
-        <!--Position Dots???-->
-
     </div>
   </section>
 
 <!--LOCATION-->
 
-  <section>
-    <div>
-      <h3>Where We Deliver</h3>
-      <p>Our coffee brews in Wheaton, Illinois and delivers within a 10 mile radius.</p>
-    </div>
+  <section class="location page-section">
+    <div class="container">
+      <div class="row">
+        <div class="one-half column text-center">
+          <h2>Where We Deliver</h2>
+          <p>Our coffee brews in Wheaton, Illinois and delivers within a 10 mile radius.</p>
+        </div>
+        <div class="one-half">
+          <p>Do we deliver to your home or work location?</p>
 
-      <!--illustration???-->
-
-      <img src="/Users/josephjames/Google Drive/Bloc/Smooth Sailing/Images/convertible.png" width=62px height=35px/>
-
-    <div>
-      <p>Do we deliver to your home or work location?</p>
-
-      <!--input field "Enter a delivery address" -->
-      <a href="findout.html">Find Out</a>
+          <!--input field "Enter a delivery address" -->
+          <a href="findout.html">Find Out</a>
+        </div>
+      </div>
     </div>
   </section>
 
 <!--TESTIMONIALS-->
 
-  <section>
-    <div>
-      <h2>What People Are Saying</h2>
+  <div class="testimonials page-section">
+    <h2>What People Are Saying</h2>
+    <div class="container">
+      
+        <div class="row">
+          <div class="one-half column">
+            <div class="blockquote">
+              <p>"I'm in love! Smooth Sailing's cold-brew coffee is hands-down the best way to drink coffee."</p>
+            </div>
+          </div>
+          <div class="one-half column">
+            <div class="blockquote">
+              <p>"I always look forward to my next delivery of fresh coffee waiting for me on my doorstep in the morning."</p>
+            </div>
+          </div>
+        </div>
     </div>
-      <ul>
-        <li>
-          <blockquote>"I'm in love! Smooth Sailing's cold-brew coffee is hands-down the best way to drink coffee."</blockquote>
-        </li>
-        <li>
-          <blockquote>"I always look forward to my next delivery of fresh coffee waiting for me on my doorstep in the morning."</blockquote>
-        </li>
-      </ul>
-    </section>
+  </div>
 
 <!--CONTACT-->
 

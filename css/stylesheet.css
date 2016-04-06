@@ -1,15 +1,89 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
+  font-size: 15px;
 
 }
 
 p {
-  
+  font-weight: 300;
+  font-size: 20px;
+  color: #4d4d4d;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #4d4d4d;
+
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.page-section {
+  padding: 60px 0;
+  margin-bottom: 30px;
+}
+
+.text-white {
+  color: #FFF;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.btn {
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 21px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 45px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: #fff;
+  opacity: 0.75;
+}
+
+.btn.btn-blue {
+  background-color: #456175;
+}
+
+.btn.btn-green {
+  background-color: green;
+}
+
+.btn.btn-red {
+  background-color: red;
+}
+
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 /* header nav */
@@ -46,113 +120,69 @@ h1, h2, h3, h4, h5, h6 {
 
 .topBar-logo {
   margin: 0 auto;
+  height: 150px;
+  width: 150px;
 }
+
 
 
 /* hero */
 
 .hero {
-  width: 100%;
-  height: 400px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.hero:after {
-  content: " ";
-  display: table;
-}
-
-.hero h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 90px;
-  color: #4d4d4d;
-  text-transform: uppercase;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-left: 30px;
-  width: 55%;
+  overflow: hidden;
+  position: relative;
 }
 
 .hero p {
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  color: #4d4d4d;
-  padding-bottom: 50px;
-  margin-left: 30px;
   width: 40%;
-
 }
 
-.hero .btn {
-  border-radius: 5px;
-  background: #456175;
-  padding: 10px 45px;
-  margin: 20px 20px 20px 30px;
 
-
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 21px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  box-shadow: 0px 2px 0px 0px #19313f
-
+.heroImage {
+  position: absolute;
+  top: -40%;
+  right: 20px;
+  width: 56%;
+  z-index: -1;
 }
 
 /* how it works ---------------------------------- */
 
 .how-it-works {
-  width: 100%;
-  height: 405px;
   background: #456175;
-}
-
-.hiw-heading {
-  color: #fff;
-  width: 33%;
-  text-align: center;
-  float: left;
-  margin: auto;
-  margin-top: 100px;
-}
-
-.hiw-heading h2 {
-  font-size: 30px;
-  padding: 20px;
 }
 
 .hiw-heading p {
   padding: 20px;
-  font-size: 20px;
-  font-weight: lighter;
 }
 
-.plan-options h6 {
-  font-family: 'Lato', sans-serif;
-  font-size: 24px;
-  padding: 20px;
-}
-
-.plan-options ul {
-  padding-bottom: 40px;
-}
-
-.plan-options li {
+.plan-item {
+  background: #FFF;
+  border-radius: 2px;
   padding: 10px;
-}
-
-.plan-options  
-
-.one-cup-plan {
-  width: 20%;
   text-align: center;
-  float: left;
-  background: #fff;
-  margin: 5%;
+  display: block;
+  text-decoration: none;
 }
+
+.plan-item ul {
+  list-style-type: none;
+}
+
+
+/*.one-cup-plan {
+  background: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .one-cup-plan {
+    float: left;
+    margin: 5%;
+    width: 20%;
+  }
+}*/
 
 
 .one-cup-plan .btn {
@@ -169,13 +199,13 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.two-cup-plan {
+/*.two-cup-plan {
   width: 20%;
   text-align: center;
   float: left;
   background: #fff;
   margin: 5%;
-}
+}*/
 
 .two-cup-plan .btn {
   border-radius: 5px;
@@ -193,54 +223,39 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BENEFITS ----------------------------------------------------- */
 
-.benefits {
-}
-
-.benefits:after {
-  clear: both;
-}
-
-.benefits-image {
-  float: left;
-}
-
-.benefits-image img {
-margin: 50px;
-}
-
-.benefits-text {
-  float: right;
-  text-align: center;
-  width: 48%;
+img.benefits-image {
+  width: 100%;
 }
 
 .benefits-text h2 {
   color: #456175;
-  font-size: 30px;
   padding: 20px;
 }
 
 .benefits-card {
   border: 1px solid #ccc;
-  width: 300px;
-  padding: 50px;
+  padding: 40px;
   text-align: center;
-  margin: auto;
 }
 
-.benefits-card h3 {
-  font-size: 24px;
-  font-style: italic;
-  padding: 0px 20px;
+/* LOCATION ----------------------------------------------------- */
+
+
+
+/* TESTIMONIALS ------------------------------------------------- */
+
+.testimonials {
+  width: 100%;
+  display: block;
+  background-image: url("images/testimony-bg.png");
+  background-color: #aaa;
 }
 
-.benefits-card p {
+.blockquote {
+  background-color: #fff;
   padding: 20px;
 }
 
-.benefits-card a {
-  text-transform: uppercase;
-  text-decoration: none;
-  ;
-}
+
+
 
