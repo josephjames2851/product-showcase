@@ -11,6 +11,10 @@ p {
   color: #4d4d4d;
 }
 
+.p2 {
+  font-size: 16px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
 }
@@ -25,6 +29,7 @@ h1 {
 
 h2 {
   font-size: 30px;
+  color: #456175;
   font-weight: 400;
   padding: 20px;
   text-align: center;
@@ -37,6 +42,14 @@ h3 {
 h4 {
   font-size: 24px;
   font-style: italic;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #456175;
+  text-transform: uppercase;
+
 }
 
 .page-section {
@@ -83,6 +96,14 @@ h4 {
 
 .link {
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -246,16 +267,36 @@ img.benefits-image {
 
 .testimonials {
   width: 100%;
-  display: block;
-  background-image: url("images/testimony-bg.png");
+  /* background-image: url("images/testimony-bg.png"); no-repeat; */
   background-color: #aaa;
 }
 
 .blockquote {
+  font-style: italic;
   background-color: #fff;
   padding: 20px;
 }
 
+
+/* CONTACT ----------------------------------------------------- */
+
+.contact {
+  background-color: #456175;
+}
+
+
+/* FOOTER ----------------------------------------------------- */
+
+.footer-copyright {
+  border-top: 1px solid #aaa;
+  width: 100%;
+
+}
+
+.footer-copyright li {
+  display: inline;
+  padding: 5px;
+}
 
 
 
