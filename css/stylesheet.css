@@ -1,18 +1,23 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
-  font-size: 15px;
+  font-size: 16px;
 
 }
 
 p {
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 200;
+  font-size: 18px;
   color: #4d4d4d;
 }
 
-.p2 {
-  font-size: 16px;
+.text-small {
+  font-size: 14px;
+}
+
+.quote {
+  font-style: italic;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,16 +42,18 @@ h2 {
 
 h3 {
   font-size: 24px;
+  color: #456175;
 }
 
 h4 {
   font-size: 24px;
+  color: #456175;
   font-style: italic;
 }
 
 h5 {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   color: #456175;
   text-transform: uppercase;
 
@@ -67,14 +74,16 @@ h5 {
 
 
 .btn {
-  border-radius: 5px;
+  border-radius: 4px;
   color: #FFF;
-  font-size: 21px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: .1rem;
   display: inline-block;
-  margin-top: 10px;
   padding: 12px 45px;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -87,11 +96,19 @@ h5 {
 }
 
 .btn.btn-green {
-  background-color: green;
+  background-color: #b2d1c8;
 }
 
 .btn.btn-red {
-  background-color: red;
+  background-color: #ff9387;
+}
+
+.fa-icon {
+  padding: 0 10px 0 0;
+}
+
+.fa-border {
+  margin: 0 10px 0 0;
 }
 
 .link {
@@ -101,11 +118,19 @@ h5 {
 
 ul {
   list-style-type: none;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
+
+.no-margin {
+  margin: 0;
+}
+
+
 
 /* header nav */
 
@@ -162,7 +187,7 @@ a {
 .heroImage {
   position: absolute;
   top: -40%;
-  right: 20px;
+  right: -100px;
   width: 56%;
   z-index: -1;
 }
@@ -261,20 +286,38 @@ img.benefits-image {
 
 /* LOCATION ----------------------------------------------------- */
 
+.location {
+  background-image: url(../images/car.png);
+  background-position: center -170px;
+
+}
 
 
 /* TESTIMONIALS ------------------------------------------------- */
 
 .testimonials {
   width: 100%;
-  /* background-image: url("images/testimony-bg.png"); no-repeat; */
-  background-color: #aaa;
+  position: relative;
+}
+
+section.testimonials::after {
+  content: "";
+  background: url(../images/testimony-bg.png) no-repeat;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-size: cover;
 }
 
 .blockquote {
   font-style: italic;
   background-color: #fff;
-  padding: 20px;
+  padding: 46px;
+  margin-bottom: 20px;
 }
 
 
@@ -284,19 +327,64 @@ img.benefits-image {
   background-color: #456175;
 }
 
+.contact li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
 
 /* FOOTER ----------------------------------------------------- */
 
+.footer ul {
+  -webkit-columns: 125px 2;
+  -moz-columns: 125px 2;
+  columns: 125px 2;
+}
+
+.footer li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
 .footer-copyright {
-  border-top: 1px solid #aaa;
+  border-top: 1px solid #e6e6e6;
   width: 100%;
 
 }
 
-.footer-copyright li {
-  display: inline;
-  padding: 5px;
+ul.footer-copyright {
+  padding: 10px;
 }
 
+.footer-copyright li {
+  font-size: 12px;
+  display: inline;
+  padding: 7px;
+}
+
+
+
+/* EMAIL SIGN UP ----------------------------------------------- */
+input[type="email"] {
+  background-color: #CCC;
+  width: 60%;
+}
+
+input[type="email"]:focus,
+input[type="email"]:active {
+  background-color: #FFF;
+}
+
+input[type="submit"].btn-blue {
+  color: #FFF;
+  position: relative;
+  left: -10px;
+  width: 30%;
+}
+
+.input-button-container {
+  position: relative;
+  width: 100%;
+}
 
 

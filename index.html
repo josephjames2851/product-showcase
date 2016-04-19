@@ -3,11 +3,13 @@
   <head>
     <link type="text/css" rel="stylesheet" href="css/reset.css"/>
     <link type="text/css" rel="stylesheet" href="css/skeleton.css"/>
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css"/>
     <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <title>Smooth Sailing Coffee</title>
 
     <!-- Google Fonts -->
-   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic|Lato:400,700,300italic' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,200,700,300italic|Lato:400,700,300italic' rel='stylesheet' type='text/css'>
 
   </head>
   <body>
@@ -36,7 +38,7 @@
     <div class="container">
       <h1>Ready Made<br> Coffee</h1>
       <p>Fresh, cold-brewed coffee automatically delivered to your doorstep for less than $10 a week.</p>
-      <a href="signup.html" class="button button-primary btn-blue">Try It!</a>
+      <a href="signup.html" class="btn btn-blue">Try It!</a>
       <img src="images/twobottles.png" alt="Two Bottles of Coffee" class="heroImage" /> 
     </div>
   </section>  
@@ -90,11 +92,30 @@
 
         <div class="one-half column">
           <h2 class="text-center">The Benefits</h2>
-          <div class="benefits-card">
-            <h4>Ready to Enjoy</h4>
-            <p>Fast and simple. No mess to clean up and no extra prep or special tools needed like coffee machines, filters or pods.</p>
-            <a href="learn.html" class="link">Learn More</a>
-          </div>
+          <ul class="benefits-slider">
+            <li>
+              <div class="benefits-card">
+                <h4>Ready to Enjoy</h4>
+                <p>Fast and simple. No mess to clean up and no extra prep or special tools needed like coffee machines, filters or pods.</p>
+                <a href="learn.html" class="link">Learn More</a>
+              </div>
+            </li>
+            <li>
+              <div class="benefits-card">
+                <h4>Mix to Taste</h4>
+                <p>Smooth Sailing Coffee is enjoyed hot or cold, strong or mild. Perfect your go-to favorite or discover a new variation.</p>
+                <a href="learn.html" class="link">Learn More</a>
+              </div>
+            </li>
+            <li>
+              <div class="benefits-card">
+                <h4>Bold Minus the Bite</h4>
+                <p>Deeply smooth and fresh bold flavor without the burnt and bitter bite of hot-brewed coffee.</p>
+                <a href="learn.html" class="link">Learn More</a>
+              </div>
+            </li>
+          </ul>
+          
           <!--Position Dots???-->
         </div>
       </div>
@@ -106,15 +127,19 @@
   <section class="location page-section">
     <div class="container">
       <div class="row">
-        <div class="one-half column text-center">
+        <div class="five columns text-center">
           <h2>Where We Deliver</h2>
           <p>Our coffee brews in Wheaton, Illinois and delivers within a 10 mile radius.</p>
         </div>
-        <div class="one-half">
+      </div>
+      <div class="row">
+        <div class="five columns offset-by-seven">
           <p>Do we deliver to your home or work location?</p>
 
-          <!--input field "Enter a delivery address" -->
-          <a href="findout.html">Find Out</a>
+          <div class="input-button-container">
+            <input type="email" placeholder="Enter email here" />
+            <input type="submit" value="Sign Up" class="btn btn-blue " />
+          </div>
         </div>
       </div>
     </div>
@@ -122,18 +147,18 @@
 
 <!--TESTIMONIALS-->
 
-  <section class="testimonials page-section">
+  <section class="testimonials page-section no-margin">
     <h2>What People Are Saying</h2>
     <div class="container">
       <div class="row">
         <div class="one-half column">
           <div class="blockquote">
-            <p class="p2">"I'm in love! Smooth Sailing's cold-brew coffee is hands-down the best way to drink coffee."</p>
+            <p class="quote">"I'm in love! Smooth Sailing's cold-brew coffee is hands-down the best way to drink coffee."</p>
           </div>
         </div>
         <div class="one-half column">
           <div class="blockquote">
-            <p class="p2">"I always look forward to my next delivery of fresh coffee waiting for me on my doorstep in the morning."</p>
+            <p class="quote">"I always look forward to my next delivery of fresh coffee waiting for me on my doorstep in the morning."</p>
           </div>
         </div>
       </div>
@@ -142,20 +167,22 @@
 
 <!--CONTACT-->
 
-  <section class="contact page-section text-center text-white">
+  <section class="contact page-section text-center text-white no-margin">
     <div class="container">
       <div class="row">
         <div class="one-half column">
-          <h3>Questions?</h3>
-          <!--email icon font awesome-->
-          <email>hello@smoothsailingcoffee.com</email>
-          <!--phone icon font awesome-->
-          <phone>630-976-5467</phone>
+          <h3 class="text-white">Questions?</h3>
+            <ul>
+              <li><i class="fa fa-envelope-o fa-icon"></i><email>hello@smoothsailingcoffee.com</email></li>
+              <li><i class="fa fa-phone fa-inverse fa-icon"></i><phone>630-976-5467</phone></li>
+            </ul>
         </div>
         <div class="one-half column">
-          <h3>Find Us</h3>
-          <img src="images/facebook.png"/>
-          <img src="images/twitter.png"/>
+          <h3 class="text-white">Find Us</h3>
+            <ul>
+              <li><i class="fa fa-facebook fa-border fa-icon"></i><span class="text-white">Facebook</span></li>
+              <li><i class="fa fa-twitter fa-border fa-icon"></i><span class="text-white">Twitter</span></li>
+            </ul>
         </div>
       </div>
     </div>
@@ -164,7 +191,7 @@
 
 <!--FOOTER-->
 
-  <section class="footer page-section">
+  <section class="footer page-section no-margin">
     <div class="container">
       <div class="row">
         <div class="one-third column">
@@ -181,28 +208,40 @@
         </div>
         <div class="one-third column">
           <h5>Get Free Coffee</h5>
-          <p class="p2">Earn $15 for every friend you refer.</p>
+          <p class="text-small">Earn $15 for every friend you refer.</p>
           <a href="referral.html" class="btn">Refer a Friend</a>
         </div>
         <div class="one-third column">
           <h5>Be In The Know</h5>
-          <p class="p2">Discover simple serving recipes and stay in touch.</p>
+          <p class="text-small">Discover simple serving recipes and stay in touch.</p>
           <!--Input Field "Your Email Address" + Sign Up button-->
         </div>
       </div>
     </div>
+  </section>
     <div class="text-center">
       <ul class="footer-copyright">
         <li>&copy; 2016 Smooth Sailing Coffee</li>
-        <li>|</li>
         <li><a href="terms.html">Terms</a></li>
-        <li>|</li>
         <li><a href="privacy.html">Privacy</a></li>
       </ul>
     </div>
-  </section>
+  
 
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
 
+  <!-- Start Scripts -->
+  <script>
+    $(document).ready(function(){
+      $(".benefits-slider").owlCarousel({
+        items: 1,
+        dots: true,
+        startPosition: 0,
+      });
+    });
+  </script>
 
   </body>
 </html>
